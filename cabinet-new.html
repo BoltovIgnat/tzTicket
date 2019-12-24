@@ -1,0 +1,1690 @@
+<!DOCTYPE HTML>
+<html lang=ru>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Tickets - CABINET NEW</title>
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fonts/fontello.css">
+	<link href="js/pickmeup-2.9.1/css/pickmeup.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="js/select2/css/select2.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/blinking.css">
+	<link rel="stylesheet" href="js/filer/css/jquery-filer.css">
+	<link rel="stylesheet" href="js/filer/css/themes/jquery.filer-dragdropbox-theme.css">
+
+	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+</head>
+<body class="cabinet-pages">
+<div class="faded-bg"></div>
+<header>
+	<div class="header-content">
+		<div class="container-box">
+			<div class="head-menu-btn-wrap">
+				<button class="head-menu-btn js_openModal" data-modal="subNav">
+					<em class="holder">
+						<span class="top"></span>
+						<span class="mid"></span>
+						<span class="btm"></span>
+					</em>
+				</button>
+			</div>
+			<div class="logo-box">
+				<a href="#" class="logo">
+					<img class="text-black" src="images/header-logo.png" height="62" width="161" alt="">
+				</a>
+			</div>
+			<div class="user-buttons-box">
+				<button class="login-button js_openModal" data-modal="login-modal">Войти</button>
+				<div class="user-account-box">
+					<a href="#" class="btn-logout">Выйти</a>
+					<div class="logined-info">
+						<a href="#">
+							<strong>Валентин</strong>
+						</a>
+					</div>
+				</div>
+				<div class="lang-box">
+					<div class="current-lang js_openModal" data-modal="lang-header">
+						<span>EN</span>
+					</div>
+					<ul class="other-langs-list modal-box" data-modal="lang-header">
+						<li><a href="#">RU</a></li>
+					</ul>
+				</div>
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li>
+						<div class="city-box">
+							<a href="#">Москва</a>
+							<div class="city-list">
+								<ul>
+									<li><a href="#">-Все города-</a></li>
+									<li><a href="#">Москва</a></li>
+									<li><a href="#">Санкт-Петербург</a></li>
+									<li><a href="#">Новосибирск</a></li>
+									<li><a href="#">Екатеренбург</a></li>
+									<li><a href="#">Казань</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li><a href="#"><span class="icon-play-circled"></span><span class="link-span">Купить билет</span></a></li>
+					<li><a href="#"><span class="icon-play-circled"></span><span class="link-span">продать билет</span></a></li>
+				</ul>
+			</nav>
+			<form action="#" class="big-search-form head-search-form">	
+				<div class="search-main-input">
+					<button class="search-button">Go</button>
+					<button type="button" class="btn-reset-search"></button>
+					<div class="input-wrap">
+						<input type="text" class="form-control" id="mainsearch3" placeholder="Место, Город, Артист или Команда">
+					</div>
+				</div>
+				<div class="big-search-results js_searchResults">
+					<div class="container">
+						<div class="text-helper-box">
+							<strong class="label">Вы имели ввиду?</strong>
+							<div class="mean-box">
+								<a href="#"><strong>Че</strong>мпионат мира по хоккею</a>
+							</div>
+						</div>
+						<div class="found-groups">
+							<div class="js_doorCustomScrollbar scrolled-results">
+								<div class="found-group">
+									<div class="group-title-box">
+										<strong class="group-name">События</strong>
+										<img src="images/search-results-group-events.png" height="16" width="17" alt="">
+									</div>
+									<ul class="group-content-list">
+										<li>
+											<em class="date">25 марта - 1 июня 2016</em>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рная встреча демонов</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#">Све<strong>че</strong>ние на вокзальном</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="found-group">
+									<div class="group-title-box">
+										<strong class="group-name">участник</strong>
+										<img src="images/search-results-group-users.png" height="15" width="13" alt="">
+									</div>
+									<ul class="group-content-list">
+										<li>
+											<em class="date">25 марта - 1 июня 2016</em>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рнушников Митя</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#">Вя<strong>че</strong>слав Малевич</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="found-group">
+									<div class="group-title-box">
+										<strong class="group-name">мероприятие</strong>
+										<img src="images/search-results-group-mero.png" height="20" width="17" alt="">
+									</div>
+									<ul class="group-content-list">
+										<li>
+											<em class="date">25 марта - 1 июня 2016</em>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рная встреча демонов</a>
+											</div>
+										</li>
+										<li>
+											<em class="date">25 марта - 1 июня 2016</em>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рдак на вокзальном</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="found-group">
+									<div class="group-title-box">
+										<strong class="group-name">Город</strong>
+										<img src="images/search-results-group-location.png" height="17" width="15" alt="">
+									</div>
+									<ul class="group-content-list">
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рногорск</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>боксары</a>
+											</div>
+										</li>
+										<li>
+											<div class="item-content">
+												<a href="#"><strong>Че</strong>рнигов </a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</header>
+
+<!-- mobile-header start -->
+<div class="mobile-header-box fixed-header">
+	<a href="#" class="mobile-logo">
+		<img class="logo" src="images/its-logo.png" height="auto" width="130" alt="">
+	</a>
+	<button class="mobile-menu-btn js_openModal" data-modal="mobileSubNav">
+		<em class="holder">
+			<span class="top"></span>
+			<span class="mid"></span>
+			<span class="btm"></span>
+		</em>
+	</button>
+	<form action="#" class="big-search-form head-search-form">
+		<div class="search-main-input">
+			<!-- <button class="search-button">Go</button> -->
+			<button type="button" class="btn-reset-search"></button>
+			<div class="input-wrap">
+				<input type="text" class="form-control" id="mainsearch3" placeholder="Поиск билетов">
+			</div>
+		</div>
+		<div class="big-search-results js_searchResults">
+			<div class="container">
+				<div class="text-helper-box">
+					<strong class="label">Вы имели ввиду?</strong>
+					<div class="mean-box">
+						<a href="#"><strong>Че</strong>мпионат мира по хоккею</a>
+					</div>
+				</div>
+				<div class="found-groups">
+					<div class="js_doorCustomScrollbar scrolled-results">
+						<div class="found-group">
+							<div class="group-title-box">
+								<strong class="group-name">События</strong>
+								<img src="images/search-results-group-events.png" height="16" width="17" alt="">
+							</div>
+							<ul class="group-content-list">
+								<li>
+									<em class="date">25 марта - 1 июня 2016</em>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рная встреча демонов</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#">Све<strong>че</strong>ние на вокзальном</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="found-group">
+							<div class="group-title-box">
+								<strong class="group-name">участник</strong>
+								<img src="images/search-results-group-users.png" height="15" width="13" alt="">
+							</div>
+							<ul class="group-content-list">
+								<li>
+									<em class="date">25 марта - 1 июня 2016</em>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рнушников Митя</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#">Вя<strong>че</strong>слав Малевич</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="found-group">
+							<div class="group-title-box">
+								<strong class="group-name">мероприятие</strong>
+								<img src="images/search-results-group-mero.png" height="20" width="17" alt="">
+							</div>
+							<ul class="group-content-list">
+								<li>
+									<em class="date">25 марта - 1 июня 2016</em>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>твертый сезон музыкальной эпохи</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рная встреча демонов</a>
+									</div>
+								</li>
+								<li>
+									<em class="date">25 марта - 1 июня 2016</em>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рдак на вокзальном</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="found-group">
+							<div class="group-title-box">
+								<strong class="group-name">Город</strong>
+								<img src="images/search-results-group-location.png" height="17" width="15" alt="">
+							</div>
+							<ul class="group-content-list">
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рногорск</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>боксары</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рнигов </a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="found-group">
+							<div class="group-title-box">
+								<strong class="group-name">Город</strong>
+								<img src="images/search-results-group-location.png" height="17" width="15" alt="">
+							</div>
+							<ul class="group-content-list">
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рногорск</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>боксары</a>
+									</div>
+								</li>
+								<li>
+									<div class="item-content">
+										<a href="#"><strong>Че</strong>рнигов </a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<a href="#" class="g_red-border">Продать билет</a>
+</div>
+<!-- mobile-header end -->
+
+<aside class="cabinet-new-sidebar">
+	<ul class="cabinet-side-nav">
+		<li class="item1">
+			<a href="cabinet-data-private.html">
+				<img src="images/cabinet-nav-item1.png" alt="" class="visible-xs img-responsive">
+				<strong>Личные данные</strong>
+			</a>
+		</li>
+		<li class="item2">
+			<a href="cabinet-predlog.html" class="active">
+				<img src="images/cabinet-nav-item2.png" alt="" class="visible-xs img-responsive">
+				<strong>Мои предложения</strong>
+			</a>
+		</li>
+		<li class="item3">
+			<a href="cabinet-buy.html">
+				<img src="images/cabinet-nav-item3.png" alt="" class="visible-xs img-responsive">
+				<strong>Мои покупки</strong>
+			</a>
+		</li>
+		<li class="item4">
+			<a href="cabinet-payments.html">
+				<img src="images/cabinet-nav-item4.png" alt="" class="visible-xs img-responsive">
+				<strong>Выплаты</strong>
+			</a>
+		</li>
+	</ul>
+</aside>
+
+<div class="content-wrap cabinet-new">
+	<div class="cabinet-new-container" id="content">
+		<div class="cabinet-new-header" id="div-calend">
+			<div class="dropdown dropdown-select hidden">
+				<button class="g_red-dropdown" id="filter-status" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="selected-text">Текущие</span>
+					<span class="caret icon-angle-down"></span>
+				</button>
+				<ul class="dropdown-menu filter-scroll" aria-labelledby="filter-status">
+					<li>
+						<div class="custom-check">
+							<input type="radio" name="statusFilter" class="checkbox" id="status-1">
+							<label for="status-1"><span class="ch-btn"></span>
+								<span>Текущие</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="radio" name="statusFilter" class="checkbox" id="status-2">
+							<label for="status-2"><span class="ch-btn"></span>
+								<span>Архивные</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="radio" name="statusFilter" class="checkbox" id="status-3">
+							<label for="status-3"><span class="ch-btn"></span>
+								<span>Все</span>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dropdown dropdown-select hidden">
+				<button class="g_red-dropdown" id="filter-type" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="selected-text">Спорт</span>
+					<span class="caret icon-angle-down"></span>
+				</button>
+				<ul class="dropdown-menu filter-scroll" aria-labelledby="filter-type">
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="type-1">
+							<label for="type-1">
+								<span class="ch-btn"></span>
+								<span>Спорт</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="type-2">
+							<label for="type-2">
+								<span class="ch-btn"></span>
+								<span>Концерты</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="type-3">
+							<label for="type-3">
+								<span class="ch-btn"></span>
+								<span>Фестивали</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="type-4">
+							<label for="type-4">
+								<span class="ch-btn"></span>
+								<span>Театр</span>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dropdown dropdown-input hidden">
+				<input id="filter-type" placeholder="Введите мероприятие" data-menu="#type-results" class="g_red-dropdown">
+				<span class="caret icon-angle-down"></span>
+				<ul class="dropdown-menu filter-scroll" aria-labelledby="filter-events" id="type-results">
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-1">
+							<label for="event-1">
+								<span class="ch-btn"></span>
+								<span>Лига чемпионов</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-2">
+							<label for="event-2">
+								<span class="ch-btn"></span>
+								<span>Чемпионат России</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-3">
+							<label for="event-3">
+								<span class="ch-btn"></span>
+								<span>Чемпионат мира по хокею</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-4">
+							<label for="event-4">
+								<span class="ch-btn"></span>
+								<span>Человек собаке друг</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-5">
+							<label for="event-5">
+								<span class="ch-btn"></span>
+								<span>Человек собаке друг</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-6">
+							<label for="event-6">
+								<span class="ch-btn"></span>
+								<span>Человек собаке друг</span>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="custom-check">
+							<input type="checkbox" class="checkbox" id="event-7">
+							<label for="event-7">
+								<span class="ch-btn"></span>
+								<span>Человек собаке друг</span>
+							</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dropdown calendar-dropdown">
+				<button class="g_red-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span id="calendar-start">__.___._____</span> - <span id="calendar-end">__.__.____</span>
+					<span class="icon-calendar"></span>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="filter-date">
+					<div class="input-wrap">
+						<div class="input-group">
+							<span class="input-title">от</span>
+							<input type="text" id="date-start" class="form-control" readonly="true">
+						</div>
+						<div class="input-group">
+							<span class="input-title">до</span>
+							<input type="text" id="date-end" class="form-control" readonly="true">
+						</div>
+					</div>
+					<div class="datepicker-cabinet"></div>
+				</div>
+			</div>
+			<button class="g_btn-white-round filter-submit">Выбрать</button>
+		</div>
+		<div class="deals-info clearfix">
+			<div class="cabinet-new-info">
+				<button class="g_btn-red-round btn_openModal" data-modal="buyRequest">Запросов на покупку (12)</button>
+			</div>
+			<button class="g_btn-red-round blinking" type="button">добавить билеты</button>
+			<div class="deals-info-text">Сделок <span class="ibc-count-deals">10</span> на сумму <span class="ibc-amount-deals">2 300 000</span><i class="icon-rouble"></i></div>
+		</div>
+		<div class="cabinet-new-table">
+			<div class="cabinet-new-table-head">
+				<div class="table-col col-event sort-toggle" data-sort="col-event">
+					<strong>Событие</strong>
+					<div class="sort-wrap">
+						<span class="icon-sort"></span>
+						<div class="search-wrap">
+							<span class="icon-search"></span>
+							<input type="text" class="search-filter">
+						</div>
+					</div>
+				</div>
+				<div class="table-col col-arena sort-toggle" data-sort="col-arena">
+					<strong>Арена</strong>
+					<div class="sort-wrap">
+						<span class="icon-sort"></span>
+						<div class="search-wrap">
+							<span class="icon-search"></span>
+							<input type="text" class="search-filter">
+						</div>
+					</div>
+				</div>
+				<div class="table-col col-arena sort-toggle" data-sort="col-arena-zone">
+					<strong>ЗОНА/СЕКТОР<br>МЕСТА</strong>
+					<div class="sort-wrap">
+						<span class="icon-sort"></span>
+						<div class="search-wrap">
+							<span class="icon-search"></span>
+							<input type="text" class="search-filter">
+						</div>
+					</div>
+				</div>
+				<div class="table-col col-other">
+					<strong>Доп.</strong>
+				</div>
+				<div class="table-col col-price sort-toggle" data-sort="col-price">
+					<strong>Цена</strong>
+					<div class="sort-wrap">
+						<span class="icon-sort"></span>
+						<div class="search-wrap">
+							<span class="icon-search"></span>
+							<input type="text" class="search-filter">
+						</div>
+					</div>
+				</div>
+				<div class="table-col col-status">
+					<strong>доступно</strong>
+				</div>
+				<!-- <div class="table-col col-actions">
+					<strong>Действия</strong>
+				</div> -->
+			</div>
+
+			<div class="cabinet-new-scroll">
+				<div class="cabinet-table-inner ibc-bk">
+					<!--Используем этот див как шаблон события-->
+					<div class="cabinet-new-item hidden">
+						<div class="table-row">
+							<div class="table-col col-event ">
+								<div class="dropdown dropdown-input">
+									<input id="filter-type" placeholder="Введите мероприятие" value="" data-menu="#type-results" class="g_red-dropdown">
+									<span class="caret icon-angle-down"></span>
+									<ul class="dropdown-menu filter-scroll ibc-event-list" aria-labelledby="filter-events" id="type-results">
+									</ul>
+								</div>
+							</div>
+							<div class="table-col col-arena ">
+								Нет
+							</div>
+							<div class="table-col col-sector col-places">
+								<select>
+									<option></option>
+									<option>Сектор А11</option>
+									<option>Сектор B11</option>
+									<option>Сектор C11</option>
+									<option>Сектор D11</option>
+									<option>Сектор А1</option>
+									<option>Сектор А13</option>
+								</select>
+								<br>
+								<input type="text" class="form-control ibc-input-place" value="">
+								<strong class="item-clickable ibc-input-place-label">Места: 115, 119, 125</strong>
+								<input type="text" class="form-control ibc-count-place" value="">
+								<strong class="item-clickable ibc-count-place-label">Количество: 1</strong>
+							</div>
+							<div class="table-col col-other">
+								<div class="custom-check">
+									<input type="checkbox" class="checkbox ibc-settings-checbox" id="sell-7" >
+									<label for="sell-7"><span class="ch-btn"></span>
+										<span class="ibc-small-text">торг</span>
+									</label>
+								</div>
+								<div class="custom-check">
+									<input type="checkbox" class="checkbox ibc-settings-checbox" id="sell-6">
+									<label for="sell-6"><span class="ch-btn"></span>
+										<span class="ibc-small-text">Электронный</span>
+									</label>
+								</div>
+
+								<div class="custom-check">
+									<input type="checkbox" class="checkbox ibc-settings-checbox ibc-settings-col-places" id="sell-5">
+									<label for="sell-5"><span class="ch-btn"></span>
+										<span class="ibc-small-text">Скрыть места</span>
+									</label>
+								</div>
+								<div class="custom-check">
+									<input type="checkbox" class="checkbox ibc-settings-checbox" id="sell-4">
+									<label for="sell-4"><span class="ch-btn"></span>
+										<span class="ibc-small-text">Выставить на арену</span>
+									</label>
+								</div>
+							</div>
+							<div class="table-col col-price ibc-col-price">
+								<strong class="price-num item-clickable">0 <span class="icon-rouble"></span><button class="btn-quest">?</button></strong>
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<span class="icon-rouble"></span>
+								</div>
+								<div class="radio-wrap">
+									<label>
+										<input type="radio" name="deal-type-1">
+										Куп.
+									</label>
+									<label>
+										<input type="radio" name="deal-type-1">
+										Прод.
+									</label>
+								</div>
+							</div>
+							<div class="table-col col-status">
+									<div class="">
+										<span>17</span> из 23
+									</div>
+							</div>
+						</div>
+						<div class="table-hover-content">
+							<div class="icon-folder-open-empty">
+								<div class="hover-text">открыть</div>
+							</div>
+							<div class="icon-docs">
+								<div class="hover-text">сохранить</div>
+							</div>
+							<div class="icon-trash-empty">
+								<div class="hover-text">удалить</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</div>
+<!-- MODALS START -->
+
+<!-- add card-form -->
+<div class="modal-box payment-modal" data-modal="payment-card">
+	<button class="js_closeModal close-area"></button>
+	<div class="modal-holder">
+		<button class="js_closeModal g_btn-close hidden-xs"></button>
+		<form action="#" class="form-type cabinet-payment-form">
+			<strong class="form-title">добавьте карту для получения выплат</strong>
+			<span class="subtitle">Введите номер карты</span>
+			<div class="form-row credit-card cardInfo__cc-num">
+				<div class="cc-num__wrap">
+					<input id="cc-num" type="tel" class="paymentInput cc-num" placeholder="XXXX XXXX XXXX XXXX" autocompletetype="cc-number" required="required">
+					<span class="card" aria-hidden="true"></span>
+				</div>
+			</div>
+			<div class="text-center">
+				<button class="g_btn-red-round">ДОбавить</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- add card-form end-->
+
+<!-- add bank account-form -->
+<div class="modal-box payment-modal" data-modal="payment-bank">
+	<button class="js_closeModal close-area"></button>
+	<div class="modal-holder">
+		<button class="js_closeModal g_btn-close hidden-xs"></button>
+		<form action="#" class="form-type cabinet-payment-form">
+			<strong class="form-title">добавить номер лицевого счета для выплат</strong>
+			<span class="subtitle">Данные получателя берутся из приватных данных</span>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Номер лицевого счета</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Наименование банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Город отделения</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>БИК банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Корреспонденский счет отделения банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Назначение платежа</label>
+							<span>Не обязательно</span>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center submit-wrap">
+				<button class="g_btn-red-round">Привязать</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- add bank account-form end-->
+
+<!-- add uri-form -->
+<div class="modal-box payment-modal" data-modal="payment-uri">
+	<button class="js_closeModal close-area"></button>
+	<div class="modal-holder">
+		<button class="js_closeModal g_btn-close hidden-xs"></button>
+		<form action="#" class="form-type cabinet-payment-form">
+			<strong class="form-title">добавить реквизиты ИП или юр.лица для вылат</strong><br>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Владелец счета и Наименование организации</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Номер расчетного счета</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Наименование банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Город отделения банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-12 xs-row">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>БИК банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="input-row">
+						<div class="input-label-wrap">
+							<label>Корреспонденский счет отделения банка</label>
+						</div>
+						<div class="input-text-wrap">
+							<input type="text" class="form-control" placeholer="Введите">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center submit-wrap">
+				<button class="g_btn-red-round">Привязать</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- add bank uri-form end-->
+
+<!-- change password -->
+<div class="modal-box change-pass-modal fade-modal" data-modal="change-pass" data-fade="true">
+	<button type="button" class="js_closeModal close-area"></button>
+	<div class="modal-holder">
+		<button type="button" class="js_closeModal g_btn-close"></button>
+		<strong class="pop-title">Сменить пароль</strong>
+		<form action="#" class="form-type">
+			<div class="form-group">
+				<div class="label-wrap">
+					<div class="vcent">
+						<label>Текущий пароль</label>
+					</div>
+				</div>
+				<div class="controls-wrap">
+					<input type="text" class="form-control" placeholder="Введите">
+				</div>
+			</div>
+			<hr>
+			<div class="form-group">
+				<div class="label-wrap">
+					<div class="vcent">
+						<label>Новый пароль</label>
+					</div>
+				</div>
+				<div class="controls-wrap">
+					<input type="text" class="form-control" placeholder="Введите">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="label-wrap">
+					<div class="vcent">
+						<label>Повторите</label>
+					</div>
+				</div>
+				<div class="controls-wrap">
+					<input type="text" class="form-control" placeholder="Введите">
+				</div>
+			</div>
+			<div class="form-group change-pass-group">
+				<div class="label-wrap hidden-xs"></div>
+				<div class="controls-wrap">
+					<button class="g_btn-red-round js_btnChangePass">Изменить</button>
+				</div>
+			</div>
+		</form>
+		<div class="success-box">
+			<div class="vcent text-center">
+				<div class="icon">
+					<img src="images/img-pass-changed.png" alt="" class="img-responsive">
+				</div>
+				<span class="changed-title">Ваш пароль успешно <br> сохранен</span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- change password end -->
+
+<!-- question1 -->
+<div class="answers-box">
+	<div class="modal-box question-modal fade-modal" data-modal="quest1" data-fade="true">
+		<button class="js_closeModal close-area"></button>
+		<div class="modal-holder">
+			<div class="modal-frame">
+				<button class="js_closeModal g_btn-close"></button>
+				<span class="quest-cat">о сервисе</span>
+				<h2>Что такое eticket4?</h2>
+				<p>Вы можете редактировать параметры своих предложений: адрес отправки, отслеживать продажу и поступление средств на счет, закачивать электронные билеты, редактировать цену билета, включать и выключать опцию «возможен торг»</p>
+				<div class="help-control">
+					<span class="label">Статья вам помогла?</span>
+					<a href="#" class="btn-yes">Да</a>
+					<span class="sep"></span>
+					<a href="#" class="btn-no">Нет</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- question1 end-->
+
+<!-- MODALS START -->
+
+<!-- login -->
+<div class="modal-box login-modal" data-modal="login-modal">
+	<div class="holder">
+		<div class="vcent">
+			<button class="close js_closeModal"></button>
+			<form action="#" class="login-form">
+				<div class="modal-icon">
+					<img src="images/login-modal-icon.png" height="40" width="34" alt="">
+				</div>
+				<div class="titles">
+					<span>Личный</span>
+					<strong>Кабинет</strong>
+				</div>
+				<p>Получите доступ с удобным функциям сайта</p>
+				<div class="form-group iconed user">
+					<input type="text" class="form-control" placeholder="Логин">
+				</div>
+				<div class="form-group iconed pass">
+					<input type="password" class="form-control" placeholder="Пароль">
+				</div>
+				<div class="form-group button-group">
+					<button class="g_btn-full-red">Войти</button>
+				</div>
+			</form>
+			<div class="modal-login-buttons">
+				<div class="button-box">
+					<button type="button" class="js_openModal" data-modal="forgot-pass-modal">Забыли пароль?</button>
+				</div>
+				<div class="button-box">
+					<button class="reg-button js_openModal" data-modal="reg-modal">Регистрация</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- login-end -->
+
+<!-- reg -->
+<div class="modal-box login-modal reg-modal" data-modal="reg-modal">
+	<div class="holder">
+		<div class="vcent">
+			<button class="close js_closeModal"></button>
+			<form action="#" class="login-form">
+				<div class="modal-icon">
+					<img src="images/reg-modal-icon.png" height="39" width="38" alt="">
+				</div>
+				<div class="titles">
+					<strong>регистрация</strong>
+					<span>новый пользователь</span>
+				</div>
+				<p>Получите доступ с удобным функциям сайта</p>
+				<div class="form-group iconed user">
+					<input type="text" class="form-control" placeholder="ФИО">
+				</div>
+				<div class="form-group iconed phone">
+					<input type="tel" class="form-control" placeholder="Телефон">
+				</div>
+				<div class="form-group iconed mail">
+					<input type="email" class="form-control" placeholder="E-mail">
+				</div>
+				<div class="form-group iconed pass">
+					<input type="password" class="form-control" placeholder="Пароль">
+				</div>
+				<div class="form-group rules-group">
+					<div class="custom-checkbox">
+						<input type="checkbox"  class="checkbox" id="reg-check1">
+						<label for="reg-check1"><span class="ch-btn"></span>
+							<strong>Я согласен с <a href="#">Условиями и Положениями</a> и <a href="#">Политикой  конфиденциальности</a> </strong>
+						</label>
+					</div>
+				</div>
+				<div class="form-group button-group">
+					<button class="g_btn-full-red">регистрация</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- reg end -->
+
+<!-- forgot-pass -->
+<div class="modal-box login-modal reg-modal" data-modal="forgot-pass-modal">
+	<div class="holder">
+		<div class="vcent">
+			<button class="close js_closeModal"></button>
+			<form action="#" class="login-form">
+				<div class="modal-icon">
+					<img src="images/reg-modal-icon.png" height="39" width="38" alt="">
+				</div>
+				<div class="titles">
+					<strong>Восстановление</strong>
+					<span>вашего пароля</span>
+				</div>
+				<p>Введите свой E-mail который вы использовали при регистрации</p>
+				<div class="form-group iconed mail">
+					<input type="email" class="form-control" placeholder="E-mail">
+				</div>
+				<div class="form-group button-group">
+					<button class="g_btn-full-red">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- forgot-pass end -->
+
+<!-- sub-nav -->
+<div class="sub-nav-side modal-box" data-modal="subNav">
+	<!-- <button class="close js_closeModal visible-xs">Закрыть</button> -->
+	<button class="close js_closeModal"></button>
+	<div class="holder">
+		<ul class="sub-navigation">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Гарантии</a></li>
+			<li><a href="#">Наша команда</a></li>
+			<li><a href="#">Наши партнеры</a></li>
+			<li><a href="#">СМИ о нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="phone-box">
+			<div class="faq-box">
+				<a href="#">Часто задаваемые вопросы</a>
+			</div>
+			<br>
+			<strong>support@eticket4.ru</strong>
+			<strong><a href="tel:+7 (499) 110 70 71">+7 (499) 110 70 71</a></strong>
+			<span>Часы работы с 10:00 - 19:00, будни</span>
+			<div class="socials-box">
+				<div><a href="#"><img src="images/socials/facebook.svg"></a></div>
+				<div><a href="#"><img src="images/socials/youtube_v2.svg"></a></div>
+				<div><a href="#"><img src="images/socials/vkontakte.svg"></a></div>
+				<div><a href="#"><img src="images/socials/odnoklassniki.svg"></a></div>
+				<div><a href="#"><img src="images/socials/instagram.svg"></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- sub-nav end -->
+
+<!-- add-event -->
+<div class="add-event-modal modal-box" data-modal="addEvent" data-fade="true">
+	<button class="close js_closeModal"></button>
+	<form action="#" class="submit-event">
+		<strong class="title">Добавить событие</strong>
+		<p>Небольшое описание того что вы можете добавить для нас</p>
+		<textarea name="ttx1" id="" cols="1" rows="4" class="form-control"></textarea>
+		<button class="g_btn-red-round">Добавить</button>
+	</form>
+</div>
+<!-- add-event end -->
+
+<!-- statistics-modal-->
+<div class="statistics-modal modal-box" data-modal="statisticsEvent" data-fade="true">
+	<button class="close btn_closeModal"></button>
+	<div class="title">Статистика ро мероприятию</div>
+	<div class="statistics-wrap">
+		<div class="statistics-graph">
+			<div class="graph-item" id="graph-1" style="width:305px; height:155px;"></div>
+			<div class="graph-item" id="graph-2" style="width:305px; height:155px;"></div>
+		</div>
+		<div class="statistics-data">
+			<table>
+				<tbody>
+					<tr>
+						<td>Цена на первичном рынке:</td>
+						<td>от 2000 <span class="icon-rouble"></span></td>
+					</tr>
+					<tr>
+						<td>Прогнозируемая дата исчезновения билетов на первичном рынке:</td>
+						<td>10.02.2017 </td>
+					</tr>
+					<tr>
+						<td>Осталось билетов на первичном рынке:</td>
+						<td>100 шт</td>
+					</tr>
+					<tr>
+						<td>Цена на первичном рынке:</td>
+						<td>от 2000 <span class="icon-rouble"></span></td>
+					</tr>
+					<tr>
+						<td>Прогнозируемая дата исчезновения билетов на первичном рынке:</td>
+						<td>100 шт</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- statistic-modal end -->
+
+<!-- buy-request-modal -->
+<div class="buy-request-modal modal-box" data-modal="buyRequest" data-fade="true">
+	<button class="close btn_closeModal"></button>
+	<div class="title">Запросы на покупку</div>
+	<div class="search-wrap">
+		<form class="form buy-request-search">
+			<input type="text" class="form-control" placeholder="Поиск">
+		</form>
+		<div class="dropdown dropdown-select">
+			<button class="g_red-dropdown" id="filter-search" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="selected-text">Фильтр</span>
+				<span class="caret icon-angle-down"></span>
+			</button>
+			<ul class="dropdown-menu filter-search" aria-labelledby="filter-search">
+				<li>
+					<div class="custom-check">
+						<input type="radio" name="searchFilter" class="checkbox" id="searchFilter-1">
+						<label for="searchFilter-1"><span class="ch-btn"></span>
+							<span>От брокеров</span>
+						</label>
+					</div>
+				</li>
+				<li>
+					<div class="custom-check">
+						<input type="radio" name="searchFilter" class="checkbox" id="searchFilter-2">
+						<label for="searchFilter-2"><span class="ch-btn"></span>
+							<span>от клиентов</span>
+						</label>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="buy-request-wrap">
+		<div class="buy-request-data">
+			<div class="cabinet-new-table">
+				<div class="cabinet-new-table-head">
+					<div class="table-col col-event">
+						<strong>Мероприятие</strong>
+					</div>
+					<!-- <div class="table-col col-mero">
+						<strong>Событие</strong>
+					</div> -->
+					<div class="table-col col-arena">
+						<strong>Арена</strong>
+					</div>
+					<div class="table-col col-date">
+						<strong>дата</strong>
+					</div>
+					<div class="table-col col-places">
+						<strong>Места</strong>
+					</div>
+					<div class="table-col col-other">
+						<strong>кол-во</strong>
+					</div>
+					<div class="table-col col-price">
+						<strong>Цена</strong>
+					</div>
+					<div class="table-col col-status">
+						<strong>Статус</strong>
+					</div>
+					<div class="table-col col-contacts">
+						<strong>Контакты</strong>
+					</div>
+					<div class="table-col col-action">
+						<strong>Действия</strong>
+					</div>
+				</div>
+				<div class="cabinet-new-scroll">
+					<div class="cabinet-table-inner">
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-blue">Новый</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-red">Запрос цены</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-green">Оплачен</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-red">Запрос цены</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-red">Запрос цены</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-red">Запрос цены</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+						<div class="cabinet-new-item">
+							<div class="table-row">
+								<div class="table-col col-event">
+									<span>Первая лига чемпионата большой заголовок мероприятия</span>
+								</div>
+								<!-- <div class="table-col col-mero">
+									<span>ЦСК / Спартак</span>
+								</div> -->
+								<div class="table-col col-arena">
+									<span>Лужники</span>
+								</div>
+								<div class="table-col col-date">
+									<span>25</span> февраля 2017
+								</div>
+								<div class="table-col col-places">
+									<span class="sector-line">Сектор А11</span>
+									<strong class="places-line">
+										<a href="#">115</a>, 
+										<a href="#"> 116</a>
+									</strong>
+								</div>
+								<div class="table-col col-qty">
+									<span>2 билета</span>
+								</div>
+								<div class="table-col col-price">
+									<strong class="price-num">1500 <span class="icon-rouble"></span><button class="btn-quest">!</button></strong>
+								</div>
+								<div class="table-col col-status">
+									<span class="status-red">Запрос цены</span>
+								</div>
+								<div class="table-col col-contacts">
+									<span class="contact-name">Пупкин Апупей Апупеевич</span>
+									<span class="contact-email">apupej@pupkin.ru</span>
+									<span class="contact-phone">+7 987 654 32 10</span>
+								</div>
+								<div class="table-col col-action">
+									<button class="btn-action">Принять</button>
+									<button class="btn-action">Отказать</button>
+									<button class="btn-action">Сменить цену</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- buy-request-modal end -->
+
+<!-- sub-nav mobile -->
+<div class="sub-nav-side modal-box mobile-sub-nav" data-modal="mobileSubNav">
+	<!-- <button class="close js_closeModal visible-xs">Закрыть</button> -->
+	<button class="close js_closeModal"></button>
+	<div class="city-box">
+		<a href="#">Москва</a>
+		<div class="city-list">
+			<ul>
+				<li><a href="#">-Все города-</a></li>
+				<li><a href="#">Москва</a></li>
+				<li><a href="#">Санкт-Петербург</a></li>
+				<li><a href="#">Новосибирск</a></li>
+				<li><a href="#">Екатеренбург</a></li>
+				<li><a href="#">Казань</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lang-box">
+		<div class="current-lang">
+			<span>EN</span>
+		</div>
+		<ul class="other-langs-list">
+			<li><a href="#">RU</a></li>
+		</ul>
+	</div>
+	<div class="sub-navigation-wrap">
+		<ul class="sub-navigation">
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Гарантии</a></li>
+			<li><a href="#">Наша команда</a></li>
+			<li><a href="#">Наши партнеры</a></li>
+			<li><a href="#">СМИ о нас</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="reg-box">
+			<div>
+				<button class="login-button js_openModal" data-modal="login-modal">Вход</button>
+			</div>
+			<div>
+				<a href="#" class="reg-button js_openModal" data-modal="reg-modal">Регистрация</a>
+			</div>
+		</div>
+		<div class="phone-box">
+			<div class="faq-box">
+				<a href="#">Часто задаваемые вопросы</a>
+			</div>
+			<br>
+			<strong>support@eticket4.ru</strong>
+			<strong><a href="tel:+7 (499) 110 70 71">+7 (499) 110 70 71</a></strong>
+			<span>Часы работы с 10:00 - 19:00, будни</span>
+		</div>
+	</div>
+</div>
+<!-- sub-nav mobile end -->
+
+
+<!-- MODALS END -->
+
+
+<!-- mobile-header start -->
+<div class="mobile-header">
+	<div class="header-content">
+		<div class="menu-center-box">
+			<div class="logo-box">
+				<a href="#" class="logo">
+					<img src="images/header-logo.png" height="62" width="161" alt="">
+				</a>
+			</div>
+			<div class="logined-box">
+				<div class="logined-info">
+					<a href="#">
+						<strong>Edward Snowden</strong>
+						<span>Личный кабинет</span>
+					</a>
+				</div>
+				<a href="#" class="btn-logout">Logout</a>
+			</div>
+			<form action="#" class="big-search-form head-search-form">	
+				<div class="search-main-input">
+					<button class="search-button">Go</button>
+					<button type="button" class="btn-reset-search"></button>
+					<div class="input-wrap">
+						<input type="text" class="form-control" id="mainsearch3" placeholder="Место, Город, Артист или Команда">
+					</div>
+				</div>
+			</form>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Безопасность</a></li>
+					<li><a href="#">Платежи</a></li>
+					<li><a href="#">Купить билет</a></li>
+					<li><a href="#">Продать билет</a></li>
+					<li><a href="#">Авторизация</a></li>
+					<li><a href="#">Регистрация</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="user-buttons-box">
+			<div class="lang-box">
+				<div class="current-lang">
+					<span>EN</span>
+				</div>
+				<ul class="other-langs-list">
+					<li><a href="#">FR</a></li>
+					<li><a href="#">GR</a></li>
+					<li><a href="#">RU</a></li>
+				</ul>
+			</div>
+			<div class="phone-box">
+				<span>Возникли вопросы?</span>
+				<strong>8 800 900 34 65</strong>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/modernizr.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.payment.js"></script>
+<script src="js/amcharts/amcharts.js"></script>
+<script src="js/amcharts/serial.js"></script>
+<script src="js/amcharts/xy.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/select2/js/select2.min.js"></script>
+<script src="js/filer/jquery.filer.min.js"></script>
+<script src="js/pickmeup-2.9.1/js/jquery.pickmeup.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/cabinet.js"></script>
+<script src="js/main.js"></script>
+<script src="js/add.new.bc.js"></script>
+</body>
+</html>

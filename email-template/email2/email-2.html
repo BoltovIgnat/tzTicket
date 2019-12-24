@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang=ru>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Tickets - Email2</title>
+	<style>
+		body {
+		  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		  font-size: 15px;
+		  color: #535353;
+		}
+
+		.content-wrapper {
+		  max-width: 600px;
+		  margin: 0 auto;
+		  padding: 60px 0 40px;
+		}
+
+		.logo {
+		  text-align: center;
+		  margin-bottom: 45px;
+		}
+
+		p {
+		  font-size: 15px;
+		  line-height: 22px;
+		  color: #535353;
+		  margin: 0 0 20px;
+		}
+
+		a {
+		  color: #D20023;
+		  text-decoration: none;
+		}
+
+		hr {
+		  border-bottom: none;
+		  border-top: 1px solid #ddd;
+		  margin-bottom: 25px;
+		}
+
+		.red-line {
+		  border-top: 1px solid #EB6677;
+		}
+
+		h2 {
+		  font-weight: normal;
+		  text-transform: uppercase;
+		  color: #A3A3A3;
+		  font-size: 22px;
+		  margin: 0 0 10px;
+		  text-align: center;
+		}
+
+		h3 {
+		  font-size: 15px;
+		  text-transform: uppercase;
+		  color: #E10010;
+		  margin: 0 0 20px;
+		}
+
+		.img-responsive {
+		  display: block;
+		  max-width: 100%;
+		  height: auto;
+		}
+
+		.item-table {
+		  width: 100%;
+		  margin-bottom: 10px;
+		}
+
+		.item-table td {
+		  padding: 5px 0;
+		  width: 50%;
+		  vertical-align: top;
+		}
+
+		.item-table .item {
+		  padding: 5%;
+		}
+
+		.item-table .image {
+		  margin-bottom: 16px;
+		  display: block;
+		}
+
+		.item-table .title {
+		  display: block;
+		  text-align: center;
+		  font-size: 19px;
+		  line-height: 24px;
+		  color: #5F5F5F;
+		  border-bottom: 1px solid #EAEAEA;
+		  padding-bottom: 15px;
+		}
+
+		.item-table .ticket-info {
+		  width: 90%;
+		  margin: 0 auto;
+		  overflow: hidden;
+		  padding: 13px 0;
+		}
+
+		.item-table .ticket-info .price {
+		  float: left;
+		  font-size: 19px;
+		  color: #000;
+		  font-weight: bold;
+		}
+
+		.item-table .ticket-info .more {
+		  float: right;
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  background: #DD001C;
+		  font-size: 13px;
+		  padding: 5px 15px;
+		}
+
+		.more-actions {
+		  background: #F2F2F2;
+		  padding: 35px 20px;
+		  text-align: center;
+		  margin-bottom: 45px;
+		}
+
+		.more-actions strong {
+		  text-transform: uppercase;
+		  font-size: 23px;
+		  color: #DD001C;
+		  line-height: 37px;
+		}
+
+		.sell-more-box {
+		  text-align: center;
+		  padding-bottom: 40px;
+		  border-bottom: 1px solid #E6E6E6;
+		  margin-bottom: 30px;
+		}
+
+		.sell-more-box img {
+		  margin: 0 auto 15px;
+		}
+
+		.sell-more-box strong {
+		  display: block;
+		  font-size: 23px;
+		  line-height: 28px;
+		  margin-bottom: 25px;
+		  font-weight: normal;
+		}
+
+		.sell-more-box a {
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  background: #DD001C;
+		  font-size: 20px;
+		  padding: 5px 15px;
+		}
+
+		.copy-text {
+		  margin-bottom: 20px;
+		  border-bottom: 1px solid #ddd;
+		  text-align: center;
+		}
+
+		.copy-text p {
+		  font-size: 13px;
+		  line-height: 21px;
+		  color: #999;
+		}
+
+		.link-list {
+		  list-style: none;
+		  margin: 0 0 20px;
+		  padding: 0 0 20px;
+		  text-align: center;
+		  border-bottom: 1px solid #ddd;
+		}
+
+		.link-list li {
+		  display: block;
+		  padding: 7px 0;
+		}
+
+		.about-company {
+		  text-align: center;
+		}
+
+		.about-company span {
+		  font-size: 14px;
+		  color: #454545;
+		  display: block;
+		  padding-bottom: 15px;
+		}
+
+		.about-company strong {
+		  font-weight: normal;
+		  font-size: 19px;
+		  color: #454545;
+		  display: block;
+		  padding-bottom: 15px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="content-wrapper">
+	<div class="logo">
+		<img src="images/logo.jpg" alt="">
+	</div>
+	<hr>
+	<h2>Популярные события</h2>
+	<table class="item-table">
+		<tr>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img01.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img02.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 1790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img03.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img04.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 1790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<hr class="red-line">
+	<br>
+	<h2>горящие билеты</h2>
+	<table class="item-table">
+		<tr>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img05.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+			<td>
+				<div class="item">
+					<a href="#" class="image">
+						<img src="images/img06.jpg" alt="" class="img-responsive">
+					</a>
+					<a href="#" class="title">Потрясающее событие в мире России</a>
+					<div class="ticket-info">
+						<span class="price">от 1790P</span>
+						<a href="#" class="more">подробнее</a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<div class="more-actions">
+		<strong>Найдите больше мероприятий на Eticket4</strong>
+	</div>
+	<div class="sell-more-box">
+		<img src="images/img-hands.jpg" height="125" width="90" alt="">
+		<strong>Продайте билеты – продайте билеты, если <br> у вас есть лишние билеты</strong>
+		<a href="#">продать билеты</a>
+	</div>
+	
+	
+	<div class="copy-text">
+		<p>«Copyright © 2016 ООО Етикет, Все права защищены. You are receiving this email because you accepted receiving news when bought or published tickets on our website. Вы получили это письмо, потому что подписались на новости Eticket4, когда покупали или продавали билеты на нашем сайте.»</p>
+	</div>
+	<ul class="link-list">
+		<li><a href="#">Политика конфиденциальности</a></li>
+		<li><a href="#">Отписаться</a></li>
+	</ul>
+	<div class="about-company">
+		<span>ООО Етикет</span>
+		<strong>+7 (499) 110 70 71</strong>
+		<a href="mailto:support@eticket4.ru">support@eticket4.ru</a>
+	</div>
+</div>
+
+
+</body>
+</html>

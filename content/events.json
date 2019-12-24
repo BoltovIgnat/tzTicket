@@ -1,0 +1,166 @@
+{
+   "results": [
+      {
+         "id": 1,
+         "text": "Afghanistan",
+         "arena": "arena 1",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A1 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A1 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A1 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A1 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A1 Сектор E11"
+            }
+         ]
+      },
+      {
+         "id": 2,
+         "text": "Aland Islands",
+         "arena": "arena 2",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A2 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A2 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A2 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A2 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A2 Сектор E11"
+            }
+         ]
+      },
+      {
+         "id": 3,
+         "text": "Albania",
+         "arena": "arena 3",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A3 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A3 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A3 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A3 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A3 Сектор E11"
+            }
+         ]
+      },
+      {
+         "id": 245,
+         "text": "Yemen",
+         "arena": "arena 4",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A4 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A4 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A4 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A4 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A4 Сектор E11"
+            }
+         ]
+      },
+      {
+         "id": 246,
+         "text": "Zambia",
+         "arena": "arena 5",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A5 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A5 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A5 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A5 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A5 Сектор E11"
+            }
+         ]
+      },
+      {
+         "id": 247,
+         "text": "Zimbabwe",
+         "arena": "arena 6",
+         "sectors": [
+            {
+               "id": 1,
+               "sector":"A6 Сектор А11"
+            },
+            {
+               "id": 2,
+               "sector":"A6 Сектор B11"
+            },
+            {
+               "id": 3,
+               "sector":"A6 Сектор C11"
+            },
+            {
+               "id": 4,
+               "sector":"A6 Сектор D11"
+            },
+            {
+               "id": 5,
+               "sector":"A6 Сектор E11"
+            }
+         ]
+      }
+   ]
+}

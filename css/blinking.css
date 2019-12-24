@@ -1,0 +1,43 @@
+    /*Позиционирование даты-выбора*/
+#div-calend {
+    position:sticky;
+    top:0;
+    left:100%;
+    width:1px;
+}
+    /*Анимация кнопки добавления события*/
+.blinking {
+    padding:20px;
+    animation:blinking 1.7s 4;
+    }
+
+@keyframes blinking {
+    0%{color: rgb(255, 255, 255);}
+    50%{color:rgba(0, 0, 0, 0);}
+    100%{color: rgb(255, 255, 255);}
+    0%{background-color: rgb(183, 58, 44);}
+    50%{background-color:rgba(0, 0, 0, 0);}
+    100%{background-color: rgb(183, 58, 44);}
+}
+.blinking:hover {
+    background: #B73A2C;
+    color: #fff;
+    animation:step-end;
+}
+
+    /*Анимация поля добавляемого события*/
+.event-select {
+    animation:flash 2s 2;
+}
+
+@keyframes flash {
+    0%{box-shadow: 0 0 13px rgb(183, 58, 44);}
+    50%{box-shadow: 0 0 13px rgba(0, 0, 0, 0);}
+    100%{box-shadow: 0 0 13px rgb(183, 58, 44);}
+}
+
+    /*Стилизация автоподбора событий*/
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
